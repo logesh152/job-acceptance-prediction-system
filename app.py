@@ -120,12 +120,12 @@ elif page == "🔍 EDA Insights":
                "model results from notebook 05 - Model_Building.ipynb")
 
     results = pd.DataFrame([
-        {"Model": "Random Forest", "Accuracy": 0.8814, "Precision": 0.7881,
-         "Recall": 0.8410, "F1": 0.8113, "ROC_AUC": 0.9518},
-        {"Model": "Logistic Regression", "Accuracy": 0.8518, "Precision": 0.7093,
-         "Recall": 0.8653, "F1": 0.7793, "ROC_AUC": 0.9371},
-        {"Model": "Decision Tree", "Accuracy": 0.8125, "Precision": 0.6364,
-         "Recall": 0.8928, "F1": 0.7424, "ROC_AUC": 0.9135},
+        {"Model": "Random Forest", "Accuracy": 0.8814, "Precision": 0.7824,
+         "Recall": 0.8424, "F1": 0.8113, "ROC_AUC": 0.9518},
+        {"Model": "Logistic Regression", "Accuracy": 0.8518, "Precision": 0.7092,
+         "Recall": 0.8648, "F1": 0.7793, "ROC_AUC": 0.9371},
+        {"Model": "Decision Tree", "Accuracy": 0.8125, "Precision": 0.6353,
+         "Recall": 0.8929, "F1": 0.7424, "ROC_AUC": 0.9135},
     ]).set_index("Model")
     st.subheader("Model comparison (test set)")
     st.dataframe(results.style.format("{:.2%}").format({"ROC_AUC": "{:.4f}"}), width="stretch")
