@@ -218,3 +218,4 @@ elif page == "🎯 Predict Candidate":
                        "threshold": {"line": {"color": "black", "width": 3},
                                      "thickness": 0.75, "value": 50}}))
             st.plotly_chart(fig, width="stretch")
+
